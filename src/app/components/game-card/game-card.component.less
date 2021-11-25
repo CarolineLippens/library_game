@@ -1,0 +1,25 @@
+.game-card {
+    margin: 1rem;
+    height: 20rem;
+    width: 15rem;
+    background-size: cover;
+    background-position: center;
+
+    &:hover {
+        transition: all 0.2s ease-out;
+        filter: blur(2px) grayscale(80%);
+        animation-direction: alternate-reverse;
+    }
+
+    &__top{
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: red;
+    }
+
+    &__botom {
+        position: absolute;
+        top: 100;
+    }
+}

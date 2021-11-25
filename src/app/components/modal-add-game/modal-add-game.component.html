@@ -1,0 +1,36 @@
+<div class="modal modal-add-game">
+    <div class="modal-add-game__title">Ajouter un jeu</div>
+
+    <form [formGroup]="addGameForm" (ngSubmit)="onSubmit()" class="modal-add-game__form">
+        <div class="modal-add-game__form__input">
+            <label for="name">Nom : </label>
+            <input type="text" id="name" required formControlName="name">
+        </div>
+
+        <div class="modal-add-game__form__input">
+          <label for="picture">image: </label>
+          <input type="text" id="picture" required formControlName="picture">
+        </div>
+
+        <div class="modal-add-game__form__input">
+            <label for="platform">Plate forme: </label>
+            
+            <input name="platform" ng-control="platform" type="radio" [(ngModel)]="platform.value"  value="xbox" formControlName="platform">Xbox360
+
+            <input name="platform" ng-control="platform" type="radio" [(ngModel)]="platform.value"  value="ps" formControlName="platform">playstation 3/4
+
+            <input name="platform" ng-control="platform" type="radio" [(ngModel)]="platform.value"  value="gameBoy" formControlName="platform">game boy color/advance
+
+            <input name="platform" ng-control="platform" type="radio" [(ngModel)]="platform.value" value="switch" formControlName="platform">nintendo switch
+        </div>
+
+        <div class="modal-add-game__form__input">
+            <label for="gotIt">possédé : </label>
+            <input type="checkbox" name="gotIt" id="gotIt" required formControlName="gotIt">
+        </div>
+
+        <div class="modal-add-game__form__input">
+            <button type="submit" value="Ajouter">Ajouter</button>
+        </div>
+    </form>
+</div>

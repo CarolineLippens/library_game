@@ -1,0 +1,22 @@
+{
+    "list":[
+        {
+            "name" : "Pokemon perle",
+            "picture" : "https://media.ldlc.com/r1600/mkp/b20ad43c12604eff829ef951b75055cd.jpeg",
+            "platform": "switch",
+            "gotIt": 1
+        },
+        {
+            "name" : "Red dead redemption 2",
+            "picture" : "https://s2.gaming-cdn.com/images/products/5653/orig/jeu-rockstar-red-dead-redemption-2-ultimate-edition-cover.jpg",
+            "platform": "ps",
+            "gotIt": 1
+        },
+        {
+            "name" : "It take two",
+            "picture" : "https://image.api.playstation.com/vulcan/ap/rnd/202012/0815/7CRynuLSAb0vysSC4TmZy5e4.png",
+            "platform": "ps",
+            "gotIt": 0
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+<div class="content">
+    <div class="content__addGame">
+        <button type="button" class="button button__addGame" (click)="openModal()">Ajouter un jeu : </button>
+    </div>
+    
+    <div *ngIf="gamesList" >
+        <div class="content__title">Ma bibliothèque :</div>
+        <div class="content__library" id="library">
+            <game-card *ngFor="let game of gamesList" [game]="game"></game-card>
+        </div>
+    </div>
+</div>
+
+<modal-add-game *ngIf="displayModal"></modal-add-game>
